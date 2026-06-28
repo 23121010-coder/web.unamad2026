@@ -1,12 +1,14 @@
+import { Link } from "react-router-dom";
+
 export default function Costa() {
   return (
     <>
       <header>
         <nav>
           <ul>
-            <li><a href="/">INICIO</a></li>
+            <li><Link to="/">INICIO</Link></li>
             <li><a href="/#historia">HISTORIA</a></li>
-            <li><a href="/reservas">RESERVAS</a></li>
+            <li><Link to="/reservas">RESERVAS</Link></li>
           </ul>
         </nav>
       </header>
@@ -27,7 +29,11 @@ export default function Costa() {
               <h2>BRISA DEL PACÍFICO</h2>
               <p>Una degustación de 5 momentos inspirada en la riqueza del océano peruano...</p>
               <p className="precio">S/ 185.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>
@@ -46,7 +52,11 @@ export default function Costa() {
               <h2>SABOR DE BARRIO Y FUEGO</h2>
               <p>Una celebración de la cocina criolla limeña...</p>
               <p className="precio">S/ 145.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>
@@ -65,7 +75,11 @@ export default function Costa() {
               <h2>SUSPIRO DE LIMA NOCTURNA</h2>
               <p>Una experiencia de postres inspirada en la elegancia limeña...</p>
               <p className="precio">S/ 125.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>

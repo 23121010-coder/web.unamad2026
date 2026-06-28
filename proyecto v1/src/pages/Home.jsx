@@ -11,7 +11,7 @@ function Home() {
             <li><a href="#">Inicio</a></li>
             <li><a href="#regiones">Nuestra Carta</a></li>
             <li><a href="#historia">Historia</a></li>
-            <li><a href="#">RESERVAS</a></li>
+            <li><Link to="/reservas">RESERVAS</Link></li>
           </ul>
         </nav>
       </header>

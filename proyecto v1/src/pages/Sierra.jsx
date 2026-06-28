@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/estilos.css";
 
 function Sierra() {
@@ -6,9 +7,9 @@ function Sierra() {
       <header>
         <nav>
           <ul>
-            <li><a href="/">INICIO</a></li>
+            <li><Link to="/">INICIO</Link></li>
             <li><a href="/#historia">HISTORIA</a></li>
-            <li><a href="#">RESERVAS</a></li>
+            <li><Link to="/reservas">RESERVAS</Link></li>
           </ul>
         </nav>
       </header>
@@ -29,7 +30,11 @@ function Sierra() {
               <h2>SINFONÍA DE ALTURA LÍQUIDA</h2>
               <p>Caldo de cocción lenta de 12 horas con papas nativas...</p>
               <p className="precio">S/ 185.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>
@@ -48,7 +53,11 @@ function Sierra() {
               <h2>TRILOGÍA DE MAÍZ Y CRUJIENTES</h2>
               <p>Quinua, humita y chicha de jora...</p>
               <p className="precio">S/ 145.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>
@@ -67,7 +76,11 @@ function Sierra() {
               <h2>LEGADO DE LA TIERRA Y FUEGO</h2>
               <p>Guisos andinos y carnes maceradas...</p>
               <p className="precio">S/ 125.00</p>
-              <a href="/reservas" className="boton-reserva">RESERVAR AHORA</a>
+
+              <Link to="/reservas" className="boton-reserva">
+                RESERVAR AHORA
+              </Link>
+
             </div>
           </div>
         </section>
